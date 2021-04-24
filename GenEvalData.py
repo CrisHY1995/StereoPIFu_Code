@@ -212,6 +212,34 @@ class RenderColorMesh(object):
         return proj_pixel, cam_vps[2, :], vps_status
 
 if __name__ == "__main__":
+
+    import argparse
+    
+    parser = argparse.ArgumentParser()
+    
+    parser.add_argument("--tex_mesh_path", type=str, default=None)
+    parser.add_argument("--tex_img_path", type=str, default=None)
+    parser.add_argument("--save_postfix", type=str, default=None)
+    parser.add_argument("--save_dir", type=str, default=None)
+    parser.add_argument("--color_mesh_path", type=str, default=None)
+    opt = parser.parse_args()
+
+    tex_mesh_path = opt.tex_mesh_path
+    tex_img_path = opt.tex_img_path
+    save_dir = opt.save_dir
+    save_postfix = opt.save_postfix
+
+    color_mesh_path = opt.color_mesh_path
+
+    tt = RenderColorMesh()
+    if tex_mesh_path is not None:
+        tt.render_tex_mesh(tex_mesh_path, tex_img_path, save_dir, save_postfix)
+    elif color_mesh_path is not None:
+        tt.render_color_mesh(color_mesh_path, save_dir, save_postfix)
+
+    
+    
+
     # color_mesh_path = "normalized_mesh_0012.off"
     # tt = RenderColorMesh()
     # tt.render_color_mesh(color_mesh_path, "./TestRes/ColorMesh", "color")
