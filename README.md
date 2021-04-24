@@ -6,7 +6,6 @@ This repository contains a pytorch implementation of "[StereoPIFu: Depth Aware C
 Authers: Yang Hong, [Juyong Zhang](http://staff.ustc.edu.cn/~juyong/), Boyi Jiang, [Yudong Guo](https://yudongguo.github.io/), [Ligang Liu](http://staff.ustc.edu.cn/~lgliu/) and [Hujun Bao](http://www.cad.zju.edu.cn/home/bao/).
 
 ## Requirements
----
 - Python 3
 - Pytorch (<=1.4.0, some compatibility issues may occur in higher versions of pytorch) 
 - tqdm
@@ -25,7 +24,6 @@ pip install -r requirements.txt
 ```
 <span id="Building_Evaluation"></span>
 ## Building Evaluation Data
----
 ### Preliminary
 Run the following script to compile & generate the relevant python module, which is used to render left/right color/depth/mask images from textured/colored mesh.
 ```bash
@@ -55,7 +53,6 @@ These samples are from [renderpeople](https://renderpeople.com/free-3d-people/) 
 Note: the bounding box of the mesh needs to be in a certain range. 
 
 ## Inference
----
 ### Preliminary
 - Run the following script to compile & generate deformable convolution from [AANet](https://github.com/haofeixu/aanet).
     ```bash
