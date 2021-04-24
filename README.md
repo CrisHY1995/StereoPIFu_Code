@@ -24,7 +24,7 @@ pip install -r requirements.txt
 <span id="Building_Evaluation"></span>
 ## Building Evaluation Data
 ### Preliminary
-Run the following script to compile & generate the relevant python module, which is used to render left/right color/depth/mask images from textured/colored mesh.
+Run the following script to compile & generate the relevant python module, which is used to render left/right color/depth/mask images from the textured/colored mesh.
 ```bash
 cd GenEvalData
 bash build.sh
@@ -49,7 +49,7 @@ python GenEvalData.py \
 --save_postfix="color"
 ```
 These samples are from [renderpeople](https://renderpeople.com/free-3d-people/) and [BUFF](http://buff.is.tue.mpg.de/) dataset.<br/> 
-Note: the bounding box of the mesh needs to be in a certain range. 
+Note: the mesh used for rendering needs to be located in a specific bounding box. 
 
 ## Inference
 ### Preliminary
