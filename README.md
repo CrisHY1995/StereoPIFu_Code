@@ -1,10 +1,10 @@
 # StereoPIFu
-### | [Project Page](https://crishy1995.github.io/StereoPIFuProject/) | [Paper](https://arxiv.org/pdf/2104.05289.pdf) | 
+## | [Project Page](https://crishy1995.github.io/StereoPIFuProject/) | [Paper](https://arxiv.org/pdf/2104.05289.pdf) | 
 ![](doc/teaser.png)
 This repository contains a pytorch implementation of "[StereoPIFu: Depth Aware Clothed Human Digitization via Stereo Vision (CVPR 2021)](https://arxiv.org/abs/2104.05289)".
+Authers: Yang Hong, [Juyong Zhang](http://staff.ustc.edu.cn/~juyong/), Boyi Jiang, [Yudong Guo](https://yudongguo.github.io/), [Ligang Liu](http://staff.ustc.edu.cn/~lgliu/) and [Hujun Bao](http://www.cad.zju.edu.cn/home/bao/).
 
-
-### Requirements
+## Requirements
 ---
 - Python 3
 - Pytorch (<=1.4.0, some compatibility issues may occur in higher versions of pytorch) 
@@ -23,16 +23,16 @@ Run the following code to install all pip packages:
 pip install -r requirements.txt 
 ```
 <span id="Building_Evaluation"></span>
-### Building Evaluation Data
+## Building Evaluation Data
 ---
-#### Preliminary
-Run the following script to compile & generate the relevant python module, which is capable of rendering left/right color/depth/mask images from textured/colored mesh.
+### Preliminary
+Run the following script to compile & generate the relevant python module, which is used to render left/right color/depth/mask images from textured/colored mesh.
 ```bash
 cd GenEvalData
 bash build.sh
 cd ..
 ```
-#### Usage
+### Usage
 
 ```bash
 #demo, for textured mesh
@@ -53,9 +53,9 @@ python GenEvalData.py \
 These samples are from [renderpeople](https://renderpeople.com/free-3d-people/) and [BUFF](http://buff.is.tue.mpg.de/) dataset. 
 Note: the bounding box of the mesh needs to be in a certain range. 
 
-### Inference
+## Inference
 ---
-#### Preliminary
+### Preliminary
 - Run the following script to compile & generate deformable convolution from [AANet](https://github.com/haofeixu/aanet).
     ```bash
     cd AANetPlusFeature/deform_conv
@@ -65,7 +65,7 @@ Note: the bounding box of the mesh needs to be in a certain range.
 - Download the [trained model](https://mailustceducn-my.sharepoint.com/:u:/g/personal/hymath_mail_ustc_edu_cn/EQe1mmKZ7bxNojddIoHcGb8BKxVYhyWLJvKXdl6iZ__ESA?e=OMUjI9) and mv to the "Models" folder.
 - Generate evalution data with aboved ["Building Evaluation Data"](#Building_Evaluation), or capture real data by [ZED Camera](https://www.stereolabs.com/zed/) (we test on ZED camera v1).
   - Note: rectifying left/right images is required before using ZED camera.
-#### A Quick Demo
+### A Quick Demo
 ```bash
 bash eval.sh
 ```
@@ -76,7 +76,7 @@ Note: At least 10GB GPU memory is recommended to run StereoPIFu model.
   <div class="container">
       <div class="row ">
           <div class="col-12">
-              <h3>Citation</h3>
+              <h2>Citation</h2>
               <pre style="background-color: #e9eeef;padding: 1.25em 1.5em"><code>@inproceedings{yang2021stereopifu,
   author    = {Yang Hong and Juyong Zhang and Boyi Jiang and Yudong Guo and Ligang Liu and Hujun Bao},
   title     = {StereoPIFu: Depth Aware Clothed Human Digitization via Stereo Vision},
