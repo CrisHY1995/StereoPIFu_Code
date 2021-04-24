@@ -1,0 +1,8 @@
+newmtl material_0
+Ka 0.2 0.2 0.2
+Kd 0.8 0.8 0.8
+Ks 1 1 1
+d 1
+Ns 75
+illum 2
+map_Kd rp_dennis_posed_004_dif_2k.jpg
