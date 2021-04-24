@@ -1,8 +1,7 @@
-# StereoPIFu
-## | [Project Page](https://crishy1995.github.io/StereoPIFuProject/) | [Paper](https://arxiv.org/pdf/2104.05289.pdf) | 
+# StereoPIFu: Depth Aware Clothed Human Digitization via Stereo Vision
+### | [Project Page](https://crishy1995.github.io/StereoPIFuProject/) | [Paper](https://arxiv.org/pdf/2104.05289.pdf) | 
 ![](doc/teaser.png)
-This repository contains a pytorch implementation of "[StereoPIFu: Depth Aware Clothed Human Digitization via Stereo Vision (CVPR 2021)](https://arxiv.org/abs/2104.05289)".
-
+This repository contains a pytorch implementation of "[StereoPIFu: Depth Aware Clothed Human Digitization via Stereo Vision (CVPR 2021)](https://arxiv.org/abs/2104.05289)".<br/>
 Authers: Yang Hong, [Juyong Zhang](http://staff.ustc.edu.cn/~juyong/), Boyi Jiang, [Yudong Guo](https://yudongguo.github.io/), [Ligang Liu](http://staff.ustc.edu.cn/~lgliu/) and [Hujun Bao](http://www.cad.zju.edu.cn/home/bao/).
 
 ## Requirements
@@ -49,7 +48,7 @@ python GenEvalData.py \
 --save_dir="./TempData/ColorMesh" \
 --save_postfix="color"
 ```
-These samples are from [renderpeople](https://renderpeople.com/free-3d-people/) and [BUFF](http://buff.is.tue.mpg.de/) dataset. 
+These samples are from [renderpeople](https://renderpeople.com/free-3d-people/) and [BUFF](http://buff.is.tue.mpg.de/) dataset.<br/> 
 Note: the bounding box of the mesh needs to be in a certain range. 
 
 ## Inference
@@ -62,12 +61,12 @@ Note: the bounding box of the mesh needs to be in a certain range.
     ```
 - Download the [trained model](https://mailustceducn-my.sharepoint.com/:u:/g/personal/hymath_mail_ustc_edu_cn/EQe1mmKZ7bxNojddIoHcGb8BKxVYhyWLJvKXdl6iZ__ESA?e=OMUjI9) and mv to the "Models" folder.
 - Generate evalution data with aboved ["Building Evaluation Data"](#Building_Evaluation), or capture real data by [ZED Camera](https://www.stereolabs.com/zed/) (we test on ZED camera v1).
-  - Note: rectifying left/right images is required before using ZED camera.
+  <br/>Note: rectifying left/right images is required before using ZED camera.
 ### A Quick Demo
 ```bash
 bash eval.sh
 ```
-The reconsturction result will be saved to "Results" folder.
+The reconsturction result will be saved to "Results" folder.<br/>
 Note: At least 10GB GPU memory is recommended to run StereoPIFu model.
 
   <!-- citing -->
