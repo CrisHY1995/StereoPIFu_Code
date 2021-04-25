@@ -13,7 +13,7 @@ Authers: Yang Hong, [Juyong Zhang](http://staff.ustc.edu.cn/~juyong/), Boyi Jian
 - openmesh
 
 for building evaluation data
-- [pybind11](https://github.com/pybind/pybind11),we recommend install with "pip install pybind11".
+- [pybind11](https://github.com/pybind/pybind11),we recommend "pip install pybind11" for installation.
 - gcc
 - cmake
 
