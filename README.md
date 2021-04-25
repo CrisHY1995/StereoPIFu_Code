@@ -62,7 +62,7 @@ Note: the mesh used for rendering needs to be located in a specific bounding box
 - Download the [trained model](https://mailustceducn-my.sharepoint.com/:u:/g/personal/hymath_mail_ustc_edu_cn/EQe1mmKZ7bxNojddIoHcGb8BKxVYhyWLJvKXdl6iZ__ESA?e=OMUjI9) and mv to the "Models" folder.
 - Generate evalution data with aboved ["Building Evaluation Data"](#Building_Evaluation), or capture real data by [ZED Camera](https://www.stereolabs.com/zed/) (we test on ZED camera v1).
   <br/>Note: rectifying left/right images is required before using ZED camera.
-### A Quick Demo
+### Demo
 ```bash
 bash eval.sh
 ```
