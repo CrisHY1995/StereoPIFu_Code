@@ -69,6 +69,9 @@ bash eval.sh
 The reconsturction result will be saved to "Results" folder.<br/>
 Note: At least 10GB GPU memory is recommended to run StereoPIFu model.
 
+## Contact
+If you have questions, please contact <hymath@mail.ustc.edu.cn>.
+
   <!-- citing -->
   <div class="container">
       <div class="row ">
@@ -80,10 +83,6 @@ Note: At least 10GB GPU memory is recommended to run StereoPIFu model.
   booktitle = {{IEEE/CVF} Conference on Computer Vision and Pattern Recognition (CVPR)},
   year      = {2021}
 }</code></pre>
-              <hr>
-          </div>
+        </div>
       </div>
   </div>
-
-## Contact
-If you have questions, please contact <hymath@mail.ustc.edu.cn>.
