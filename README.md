@@ -69,9 +69,6 @@ bash eval.sh
 The reconsturction result will be saved to "Results" folder.<br/>
 Note: At least 10GB GPU memory is recommended to run StereoPIFu model.
 
-## Contact
-If you have questions, please contact <hymath@mail.ustc.edu.cn>.
-
   <!-- citing -->
   <div class="container">
       <div class="row ">
@@ -86,3 +83,6 @@ If you have questions, please contact <hymath@mail.ustc.edu.cn>.
         </div>
       </div>
   </div>
+
+## Contact
+If you have questions, please contact <hymath@mail.ustc.edu.cn>.
