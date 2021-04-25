@@ -2,7 +2,7 @@
 ### | [Project Page](https://crishy1995.github.io/StereoPIFuProject/) | [Paper](https://arxiv.org/pdf/2104.05289.pdf) | 
 ![](doc/teaser.png)
 This repository contains a pytorch implementation of "[StereoPIFu: Depth Aware Clothed Human Digitization via Stereo Vision (CVPR 2021)](https://arxiv.org/abs/2104.05289)".<br/>
-Authers: Yang Hong, [Juyong Zhang](http://staff.ustc.edu.cn/~juyong/), Boyi Jiang, [Yudong Guo](https://yudongguo.github.io/), [Ligang Liu](http://staff.ustc.edu.cn/~lgliu/) and [Hujun Bao](http://www.cad.zju.edu.cn/home/bao/).
+Authors: Yang Hong, [Juyong Zhang](http://staff.ustc.edu.cn/~juyong/), Boyi Jiang, [Yudong Guo](https://yudongguo.github.io/), [Ligang Liu](http://staff.ustc.edu.cn/~lgliu/) and [Hujun Bao](http://www.cad.zju.edu.cn/home/bao/).
 
 ## Requirements
 - Python 3
